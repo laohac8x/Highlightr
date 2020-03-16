@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Highlightr"
-  s.version          = "2.1.0"
+  s.version          = "2.1.1"
   s.summary          = "iOS & macOS Syntax Highlighter."
 
   s.description      = <<-DESC
@@ -19,12 +19,12 @@ Pod::Spec.new do |s|
   s.screenshots     = "http://raw.githubusercontent.com/raspu/Highlightr/master/mix2.gif", "http://raw.githubusercontent.com/raspu/Highlightr/master/coding.gif"
   s.license          = 'MIT'
   s.author           = { "J.P. Illanes" => "jpillaness@gmail.com" }
-  s.source           = { :git => "https://github.com/raspu/Highlightr.git", :tag => s.version.to_s, :submodules => true}
+  s.source           = { :git => "https://github.com/laohac8x/Highlightr.git", :tag => s.version.to_s, :submodules => true}
 
-  s.osx.deployment_target = '10.11'
-  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.12'
+  s.ios.deployment_target = '9.0'
 
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 
   s.requires_arc = true
 

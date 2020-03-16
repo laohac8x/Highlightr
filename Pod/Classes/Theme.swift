@@ -129,12 +129,10 @@ open class Theme {
         }
     }
     
-    internal func applyStyleToString(_ string: String, styleList: [String]) -> NSAttributedString
-    {
+    internal func applyStyleToString(_ string: String, styleList: [String]) -> NSAttributedString {
         let returnString : NSAttributedString
         
-        if styleList.count > 0
-        {
+        if styleList.count > 0 {
             var attrs = [AttributedStringKey: Any]()
             attrs[.font] = codeFont
             for style in styleList
@@ -149,10 +147,8 @@ open class Theme {
             }
             
             returnString = NSAttributedString(string: string, attributes:attrs )
-        }
-        else
-        {
-            returnString = NSAttributedString(string: string, attributes:[AttributedStringKey.font:codeFont] )
+        } else {
+            returnString = NSAttributedString(string: string, attributes:[AttributedStringKey.font: codeFont ?? RPFont.systemFont(ofSize: 14)] )
         }
         
         return returnString
